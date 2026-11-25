@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+.DS_Store
+Thumbs.db
+backend/uploads/
+backend/uploads_backup/
+.vercel
+.env
+.env*
+*.backup
+App.backup.jsx
+!.env.example

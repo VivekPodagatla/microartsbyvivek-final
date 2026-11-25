@@ -1,0 +1,33 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/artworks/:slug",
+      "destination": "/artworks/:slug/index"
+    },
+    {
+      "source": "/gifts/:slug",
+      "destination": "/gifts/:slug/index"
+    },
+    {
+      "source": "/studio",
+      "destination": "/index"
+    },
+    {
+      "source": "/design",
+      "destination": "/index"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/studio",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
+}

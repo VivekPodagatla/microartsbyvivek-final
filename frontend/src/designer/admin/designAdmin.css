@@ -1,0 +1,335 @@
+/* ================= DASHBOARD: DESIGN REQUESTS =================
+   Scoped under .design-admin; site brown palette. */
+
+.design-admin {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #3b2a1e;
+}
+
+.design-admin .da-muted {
+  color: #7a6a5d;
+  font-size: 14px;
+}
+
+.design-admin .da-error,
+.design-admin .da-warning {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fbeaea;
+  color: #8a1c1c;
+}
+
+.design-admin .da-warning {
+  background: #fff4dc;
+  color: #7a5200;
+}
+
+.design-admin .da-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.design-admin select,
+.design-admin textarea {
+  padding: 8px 10px;
+  border: 1px solid #d8c5b5;
+  border-radius: 8px;
+  background: #ffffff;
+  font-size: 15px;
+}
+
+.design-admin textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.design-admin .da-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 14px;
+  border: 1px solid #d8c5b5;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #8b5e3c;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.design-admin .da-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.design-admin .da-primary {
+  border-color: #8b5e3c;
+  background: #8b5e3c;
+  color: #ffffff;
+}
+
+.design-admin .da-danger {
+  border-color: #a12424;
+  color: #a12424;
+}
+
+.design-admin .da-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+/* ================= LIST ================= */
+
+.design-admin .da-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.design-admin .da-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid #e3d6ca;
+  border-radius: 12px;
+  background: #ffffff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.design-admin .da-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.design-admin .da-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #f7f3ef;
+}
+
+.design-admin .da-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px 14px;
+}
+
+.design-admin .da-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.design-admin .da-card-name {
+  font-weight: 700;
+}
+
+.design-admin .da-card-body > span {
+  overflow-wrap: anywhere;
+}
+
+.design-admin .da-line a {
+  color: #8b5e3c;
+  font-weight: 700;
+}
+
+.design-admin .da-line .da-pre {
+  text-align: right;
+}
+
+.design-admin .da-status {
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #f3eee9;
+  color: #8b5e3c;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.design-admin .da-status-new {
+  background: #8b5e3c;
+  color: #ffffff;
+}
+
+.design-admin .da-status-cancelled {
+  background: #eeeeee;
+  color: #777777;
+}
+
+/* ================= DETAIL ================= */
+
+.design-admin .da-detail-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.design-admin .da-detail-header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.design-admin .da-status-select {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #7a6a5d;
+}
+
+.design-admin .da-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .design-admin .da-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+.design-admin .da-panel {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid #e3d6ca;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.design-admin .da-panel h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.design-admin .da-panel h3 {
+  margin: 16px 0 8px;
+  font-size: 16px;
+}
+
+.design-admin .da-panel p {
+  margin: 6px 0;
+}
+
+.design-admin .da-pre {
+  white-space: pre-wrap;
+}
+
+.design-admin .da-view-scroll {
+  max-height: 70vh;
+  overflow: auto;
+  border-radius: 8px;
+  background: #f7f3ef;
+}
+
+.design-admin .da-view-scroll img {
+  display: block;
+  max-width: none;
+  height: auto;
+}
+
+.design-admin .da-zoom {
+  display: block;
+  margin: 10px 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #7a6a5d;
+}
+
+.design-admin .da-zoom input {
+  width: 100%;
+  accent-color: #8b5e3c;
+}
+
+.design-admin .da-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 0;
+  border-bottom: 1px dotted #d8c5b5;
+}
+
+.design-admin .da-total {
+  border-bottom: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ================= CARVING ================= */
+
+.design-admin .da-pencil {
+  padding: 12px 0;
+  border-top: 1px solid #efe6dd;
+}
+
+.design-admin .da-pencil-svg svg {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+}
+
+.design-admin .da-pencil dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 14px;
+  margin: 10px 0 0;
+}
+
+.design-admin .da-pencil dt {
+  color: #7a6a5d;
+  font-weight: 700;
+}
+
+.design-admin .da-pencil dd {
+  margin: 0;
+}
+
+.design-admin .da-pencil ol {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.design-admin .da-carve-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ================= PHOTOS ================= */
+
+.design-admin .da-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.design-admin .da-photo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #3b2a1e;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.design-admin .da-photo img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #f7f3ef;
+}

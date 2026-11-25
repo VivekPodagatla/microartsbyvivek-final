@@ -1,0 +1,9 @@
+{
+  "name": "microarts-shared",
+  "private": true,
+  "type": "module",
+  "description": "Pure modules shared by the frontend and the backend (design rules and pricing).",
+  "scripts": {
+    "test": "node --test"
+  }
+}

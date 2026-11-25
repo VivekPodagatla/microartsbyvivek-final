@@ -1,0 +1,8 @@
+/* Magnolia Script for pencil lettering and quotes (free for
+   commercial use, confirmed by Vivek). Self-hosted. */
+
+@font-face {
+  font-family: "Magnolia Script";
+  src: url("./fonts/MagnoliaScript.otf") format("opentype");
+  font-display: block;
+}
